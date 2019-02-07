@@ -10,7 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
+    var attemptCount:Int? = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +20,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     @IBAction func signInAction(_ sender: Any) {
+        
+        attemptCount = attemptCount! + 1
+        self.countLabel.text = self.countLabel.text! + String(attemptCount!)
         
         print("Sign In button has been clicked!")
     }
