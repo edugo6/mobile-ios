@@ -17,7 +17,11 @@ class ViewController: UIViewController {
         self.nameLabel.text = "My name is Efren Duran"
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    @IBAction func signInAction(_ sender: Any) {
+        
+        print("Sign In button has been clicked!")
+    }
+    
 
 }
 
