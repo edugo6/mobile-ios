@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		899B0DA822110652008212D0 /* modalControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B0DA722110652008212D0 /* modalControllerViewController.swift */; };
 		89DC3E2C220AA25200CB6392 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DC3E2B220AA25200CB6392 /* Images.xcassets */; };
 		89DCF83B2207942E00F10E5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCF83A2207942E00F10E5D /* AppDelegate.swift */; };
 		89DCF83D2207942E00F10E5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCF83C2207942E00F10E5D /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		899B0DA722110652008212D0 /* modalControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modalControllerViewController.swift; sourceTree = "<group>"; };
 		89DC3E2B220AA25200CB6392 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		89DCF8372207942E00F10E5D /* MyName.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyName.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89DCF83A2207942E00F10E5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				89DCF83A2207942E00F10E5D /* AppDelegate.swift */,
 				89DCF83C2207942E00F10E5D /* ViewController.swift */,
 				89DCF83E2207942E00F10E5D /* Main.storyboard */,
+				899B0DA722110652008212D0 /* modalControllerViewController.swift */,
 				89DCF8412207942F00F10E5D /* Assets.xcassets */,
 				89DCF8432207942F00F10E5D /* LaunchScreen.storyboard */,
 				89DCF8462207942F00F10E5D /* Info.plist */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89DCF83D2207942E00F10E5D /* ViewController.swift in Sources */,
+				899B0DA822110652008212D0 /* modalControllerViewController.swift in Sources */,
 				89DCF83B2207942E00F10E5D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

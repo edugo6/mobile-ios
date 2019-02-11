@@ -212,11 +212,47 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="xBN-d3-w6s"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Pendientes" id="c5G-RR-XVS"/>
+                    <navigationItem key="navigationItem" title="Pendientes" id="c5G-RR-XVS">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="I7p-vh-Crk">
+                            <connections>
+                                <segue destination="BrZ-AF-AP3" kind="presentation" modalTransitionStyle="partialCurl" id="q4G-pr-w4k"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NJL-w1-v2z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1698" y="767"/>
+        </scene>
+        <!--Modal Controller View Controller-->
+        <scene sceneID="4ze-Tf-2jz">
+            <objects>
+                <viewController id="BrZ-AF-AP3" customClass="modalControllerViewController" customModule="MyName" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c3v-3l-Nlt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dT-vC-QDf">
+                                <rect key="frame" x="160.5" y="318.5" width="54" height="30"/>
+                                <state key="normal" title="Dismiss"/>
+                                <connections>
+                                    <action selector="closeModal:" destination="BrZ-AF-AP3" eventType="touchUpInside" id="w5o-jR-WBe"/>
+                                    <action selector="qa:" destination="vtq-gj-S90" eventType="touchUpInside" id="Hyy-nw-7Mw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1dT-vC-QDf" firstAttribute="centerX" secondItem="c3v-3l-Nlt" secondAttribute="centerX" id="MbC-gI-RjO"/>
+                            <constraint firstItem="1dT-vC-QDf" firstAttribute="centerY" secondItem="c3v-3l-Nlt" secondAttribute="centerY" id="QUc-M1-ygC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kyq-mT-1ez"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QME-Eg-TAU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="vtq-gj-S90" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2394" y="767"/>
         </scene>
         <!--Realizadas-->
         <scene sceneID="Yqo-hZ-j5X">
